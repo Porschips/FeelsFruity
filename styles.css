@@ -1,0 +1,296 @@
+html {
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+}
+
+/* Different sites unique properties */
+.Nav {
+    background-image: url("Background.jpg");
+    background-size: cover;
+}
+
+.Oranges {
+    background-image: url("OrangeImages/OrangesBG.jpg");
+    background-size: cover;
+}
+
+#OrangeNav {
+    background-color: orange;
+}
+
+.Grapes {
+    background-image: url("GrapeImages/GrapesBG.jpg");
+    background-size: cover;
+}
+
+#GrapeNav {
+    background-color: purple;
+}
+
+.Apples {
+    background-image: url("AppleImages/ApplesBG.jpg");
+    background-size: cover;
+}
+
+#AppleNav {
+    background-color: red;
+}
+
+.Bananas {
+    background-image: url("BananaImages/BananaBG.jpg");
+    background-size: cover;
+}
+
+#BananaNav {
+    background-color: rgb(228, 228, 2);
+}
+
+.Avocados {
+    background-image: url("AvocadoImages/AvocadoBG.jpg");
+    background-size: cover;
+}
+
+#AvocadoNav {
+    background-color: darkgreen;
+}
+
+
+#NormalPictures img{
+    height: fill
+    ;
+    object-fit: fill;
+    border: 0.25rem solid black;
+}
+
+/* base */
+body {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: " header header header"
+                         " lside navbar rside"
+                         " lside article sidebar"
+                         " lside footer sidebar";
+}
+
+header {
+    grid-area: header;
+    font-size: 2rem;
+    color: aliceblue;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+/* Navigaition bar */ 
+nav {
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: brown;
+    grid-area: navbar;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 5rem;
+    margin: 0px;
+}
+
+
+
+nav li {
+    display: block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: lightgray;
+}
+
+/* sidebar */
+.sidebar {
+    background-color: rgb(92, 43, 3);
+    grid-area: sidebar;
+    width: 3rem;
+    height: 20rem;
+    position: sticky;
+    top: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 0.2rem;
+  }
+
+.sidebar a img {
+    border: none;
+    max-height: 3rem;
+    max-width: 3rem;
+    object-fit: contain;
+}
+  
+/* main article */
+article {
+    background-color: white;
+    max-width: fit-content;
+    min-height: 40rem;
+    padding: 10px;
+    grid-area: article;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+article h3 {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+article h2 {
+    margin: 0px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+/* video */
+iframe {
+    display: block;
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    max-width: 30rem;
+}
+
+/* Image in article */
+.ArticleImageLeft {
+    float: left;
+    margin-right: 1rem;
+}
+
+.ArticleImageRight {
+    float: right;
+    margin-left: 1rem;
+}
+
+.Oranges img {
+    border: 0.2rem solid orange;
+}
+
+.Grapes img {
+    border: 0.2rem solid purple;
+}
+
+.Apples img {
+    border: 0.2rem solid red;
+}
+
+.Bananas img {
+    border: 0.2rem solid yellow;
+}
+
+.Avocados img {
+    border: 0.2rem solid darkgreen;
+}
+
+article ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+}
+
+
+/* Fruit List */
+#FruitLists {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2.7rem;
+    row-gap: 1rem;
+}
+
+/* Img scaling */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: lightblue;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 0.25rem solid black;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    color: aliceblue;
+}
+
+/* Media queries for mobile view, tablet, and desktop */
+@media screen and (min-width: 1500px) {
+    body {
+        display: grid;
+        grid-template-columns: 22.5% 55% 22.5%;
+        grid-template-areas: " header header header"
+                             " lside navbar sidebar"
+                             " lside article sidebar"
+                             " lside footer sidebar";
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: " header header header"
+                             " lside navbar sidebar"
+                             " lside article sidebar"
+                             " lside footer sidebar";
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px){
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                             "navbar"
+                             "article"
+                             "footer";
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
