@@ -184,6 +184,7 @@ iframe {
     margin-right: auto;
     width: 75%;
     max-width: 30rem;
+    border: 0px;
 }
 
 
