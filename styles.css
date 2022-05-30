@@ -3,6 +3,7 @@ html {
     font-family: "Fredoka", sans-serif;
 }
 
+
 /* Different sites unique properties */
 .Nav {
     background-image: url("Background.jpg");
@@ -62,6 +63,7 @@ html {
     border: 0.25rem solid black;
 }
 
+
 /* base */
 body {
     display: grid;
@@ -83,6 +85,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.4rem;
 }
+
 
 /* Navigaition bar */ 
 nav {
@@ -119,6 +122,7 @@ nav a:hover {
     color: lightgray;
 }
 
+
 /* sidebar */
 .sidebar {
     background-color: rgb(92, 43, 3);
@@ -140,7 +144,8 @@ nav a:hover {
     max-width: 3rem;
     object-fit: contain;
 }
-  
+
+
 /* main article */
 article {
     background-color: white;
@@ -180,6 +185,7 @@ iframe {
     width: 75%;
     max-width: 30rem;
 }
+
 
 /* Image in article */
 .ArticleImageLeft {
@@ -229,6 +235,7 @@ article ul {
     row-gap: 1rem;
 }
 
+
 /* Img scaling */
 .box {
     display: flex;
@@ -251,11 +258,13 @@ img {
     border: 0.25rem solid black;
 }
 
+
 /* footer */
 footer {
     grid-area: footer;
     color: aliceblue;
 }
+
 
 /* Media queries for mobile view, tablet, and desktop */
 @media screen and (min-width: 1500px) {
